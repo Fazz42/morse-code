@@ -40,10 +40,10 @@ def decoder (code):
 
 while True:
     choice: str = input("To encode, press e. To decode, press d: ")
-    if choice == "e":
+    if choice.lower() == "e":
         string_to_encode: str = input("Enter the sentence you want to encode: ")
         print(morse(string_to_encode))
-    elif choice == "d":
+    elif choice.lower() == "d":
         string_to_decode: str = input("Enter the morse code you want to decode: ")
         print(decoder(string_to_decode))
     else: 
